@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('payment_app.urls')),
+    path('payment/api/', include('paymentAPI.urls')),
 ]
